@@ -15,17 +15,17 @@ profile: |
 
 ## はじめに
 
-窓際族物語を楽しんでくれていますか。窓際族物語は、白い仮面の怪人「そば屋」をはじめとする 8 体のキャラクターが繰り広げるコンテンツ IP です。生成 AI で制作した動画やイラストなど、さまざまなネタを X に投稿しているので、「窓際族物語」で検索してみてください <span class="footnote">著者の X アカウント, <a href="https://x.com/sobaya15">https://x.com/sobaya15</a></span>。
+窓際族物語を楽しんでくれていますか。窓際族物語は、白い仮面の怪人「そば屋」をはじめとする 8 体のキャラクターが繰り広げるコンテンツ IP です。生成 AI で制作した動画やイラストなど、さまざまなネタを X に投稿しているので、「窓際族物語」で検索してみてください <span class="footnote">著者の X アカウント, https://x.com/sobaya15</span>。
 
 ![著者の X アカウント](./images_madogiwa/qr-x-sobaya.png){width=110}
 
 動画や画像の精度を上げる方法は意外と知られていないみたいです。そこで本章では、窓際代表として、窓際の生きる方法をまとめます。
 
-なお、本章で紹介する設定ファイルやスクリプトは、すべて GitHub リポジトリ <span class="footnote">Seedance_Madogiwa, <a href="https://github.com/sobaya-0141/Seedance_Madogiwa">https://github.com/sobaya-0141/Seedance_Madogiwa</a></span> で公開しています。世界観・キャラクター設定・台本といった IP の原典ドキュメントから、動画制作のワークフロー、ゲームなどの制作物までを 1 つのリポジトリで一元管理しています。
+なお、本章で紹介する設定ファイルやスクリプトは、すべて GitHub リポジトリ <span class="footnote">Seedance_Madogiwa, https://github.com/sobaya-0141/Seedance_Madogiwa</span> で公開しています。世界観・キャラクター設定・台本といった IP の原典ドキュメントから、動画制作のワークフロー、ゲームなどの制作物までを 1 つのリポジトリで一元管理しています。
 
 ![窓際族物語のリポジトリ](./images_madogiwa/qr-madogiwa-repo.png){width=110}
 
-また、作成した動画やゲームなどは、すべて公式サイト <span class="footnote">窓際族物語の公式サイト, <a href="https://madogiwa.work/">https://madogiwa.work/</a></span> に置いてあるので、ぜひご覧ください。動画については素材やプロンプトも参照できるようになっているので、参考にしてみてください。
+また、作成した動画やゲームなどは、すべて公式サイト <span class="footnote">窓際族物語の公式サイト, https://madogiwa.work/</span> に置いてあるので、ぜひご覧ください。動画については素材やプロンプトも参照できるようになっているので、参考にしてみてください。
 
 ![窓際族物語の公式サイト](./images_madogiwa/qr-madogiwa-site.png){width=110}
 
@@ -35,7 +35,7 @@ profile: |
 
 画像生成は、精度を上げつつ数をこなす必要があります。そのため、簡単な指示でイラストを作成できるようにしておくことが重要です。動画を作るときにもサンプルとして画像を渡すと精度の向上につながるため、画像の生成は一発ネタだけでなく動画生成時にも重要になります。
 
-リポジトリの`02_CHARACTERS`ディレクトリ <span class="footnote">キャラクター設定, <a href="https://github.com/sobaya-0141/Seedance_Madogiwa/tree/main/02_CHARACTERS">https://github.com/sobaya-0141/Seedance_Madogiwa/tree/main/02_CHARACTERS</a></span> にあるように、キャラクターの名前やサイズ感、絶対に崩してはいけない設定（NG 変更）と画像をまとめておきます。
+リポジトリの`02_CHARACTERS`ディレクトリ <span class="footnote">キャラクター設定, https://github.com/sobaya-0141/Seedance_Madogiwa/tree/main/02_CHARACTERS</span> にあるように、キャラクターの名前やサイズ感、絶対に崩してはいけない設定（NG 変更）と画像をまとめておきます。
 
 ![キャラクター設定のディレクトリ](./images_madogiwa/qr-characters.png){width=110}
 
@@ -69,8 +69,8 @@ profile: |
 窓際族物語では、次の 3 パターンで音声を用意しています。
 
 - 動画を作るとき、動画生成 AI に音声も入れてもらう
-- VOICEVOX <span class="footnote">VOICEVOX, <a href="https://voicevox.hiroshiba.jp/">https://voicevox.hiroshiba.jp/</a></span> で音声を作って動画生成 AI に渡す
-- Irodori-TTS <span class="footnote">Irodori-TTS, <a href="https://github.com/Aratako/Irodori-TTS">https://github.com/Aratako/Irodori-TTS</a></span> で音声を作って動画生成 AI に渡す
+- VOICEVOX <span class="footnote">VOICEVOX, https://voicevox.hiroshiba.jp/</span> で音声を作って動画生成 AI に渡す
+- Irodori-TTS <span class="footnote">Irodori-TTS, https://github.com/Aratako/Irodori-TTS</span> で音声を作って動画生成 AI に渡す
 
 ![VOICEVOX](./images_madogiwa/qr-voicevox.png){width=110}
 
@@ -90,7 +90,7 @@ VOICEVOX はクレジット表示が必要で、キャラごとの利用規約�
 
 そして、Seed 値が違う 4 パターンの音声を出してもらい、最適なものを選んで確定させています。
 
-おかやまんについては福ちゃんたちと同じ方法です。そば屋はそのままの声だと面白くないので、モンスターのような声に加工しました。具体的には、ピッチを 5 半音下げて、70Hz のトレモロでうなりを加えています。ピッチを下げても音声の尺は変わらないため、後述するリップシンクの用途にもそのまま使えます。加工の詳細は Pull Request <span class="footnote">そば屋の声を長尺の参照音声とモンスターボイス加工に変更, <a href="https://github.com/sobaya-0141/Seedance_Madogiwa/pull/26">https://github.com/sobaya-0141/Seedance_Madogiwa/pull/26</a></span> を参照してください。
+おかやまんについては福ちゃんたちと同じ方法です。そば屋はそのままの声だと面白くないので、モンスターのような声に加工しました。具体的には、ピッチを 5 半音下げて、70Hz のトレモロでうなりを加えています。ピッチを下げても音声の尺は変わらないため、後述するリップシンクの用途にもそのまま使えます。加工の詳細は Pull Request <span class="footnote">そば屋の声を長尺の参照音声とモンスターボイス加工に変更, https://github.com/sobaya-0141/Seedance_Madogiwa/pull/26</span> を参照してください。
 
 ![そば屋の声加工の Pull Request](./images_madogiwa/qr-pr26.png){width=110}
 
@@ -126,7 +126,7 @@ VOICEVOX の利用規約では、使用キャラクターのクレジット表�
 
 「画像生成の精度を上げる」でも書きましたが、世界観の設定は動画のプロンプトを用意するときにもとても役に立ちます。用意しないとシーンごとや動画ごとにブレが大きくて面白くならないので、必ず用意してください。
 
-動画用のプロンプトは、数秒ごとに区切ってとても細かく内容を指示します。ここで紹介すると大変なので、リポジトリの台本ファイル <span class="footnote">台本ファイルの例, <a href="https://github.com/sobaya-0141/Seedance_Madogiwa/blob/main/03_SCRIPTS/18_ichiban_kuji_all_cast_cm/script.md">https://github.com/sobaya-0141/Seedance_Madogiwa/blob/main/03_SCRIPTS/18_ichiban_kuji_all_cast_cm/script.md</a></span> を参照してください。
+動画用のプロンプトは、数秒ごとに区切ってとても細かく内容を指示します。ここで紹介すると大変なので、リポジトリの台本ファイル <span class="footnote">台本ファイルの例, https://github.com/sobaya-0141/Seedance_Madogiwa/blob/main/03_SCRIPTS/18_ichiban_kuji_all_cast_cm/script.md</span> を参照してください。
 
 ![台本ファイルの例](./images_madogiwa/qr-script-example.png){width=110}
 
@@ -163,7 +163,7 @@ H3 では、渡した音声をそのまま使ってもリップシンクをそ�
 
 ### ワークフローをスキル化する
 
-プロンプトの作り方を Codex との会話のたびに説明するのは大変です。そこで、台本・プロンプト・キーフレーム画像・セリフ音声を一式生成する手順を「スキル」<span class="footnote">Seedance 動画制作ワークフロー, <a href="https://github.com/sobaya-0141/Seedance_Madogiwa/blob/main/.claude/skills/seedance/SKILL.md">https://github.com/sobaya-0141/Seedance_Madogiwa/blob/main/.claude/skills/seedance/SKILL.md</a></span> として明文化しました。Claude Code と Codex のどちらからでも、同じ品質で使えます。あらすじを渡すだけで、本章で説明しているルールに沿った成果物が一式出てきます。音声の生成もシェルスクリプト化してあり、コマンド 1 つでキャラの声を生成できます。
+プロンプトの作り方を Codex との会話のたびに説明するのは大変です。そこで、台本・プロンプト・キーフレーム画像・セリフ音声を一式生成する手順を「スキル」<span class="footnote">Seedance 動画制作ワークフロー, https://github.com/sobaya-0141/Seedance_Madogiwa/blob/main/.claude/skills/seedance/SKILL.md</span> として明文化しました。Claude Code と Codex のどちらからでも、同じ品質で使えます。あらすじを渡すだけで、本章で説明しているルールに沿った成果物が一式出てきます。音声の生成もシェルスクリプト化してあり、コマンド 1 つでキャラの声を生成できます。
 
 ![Seedance 動画制作ワークフローのスキル](./images_madogiwa/qr-seedance-skill.png){width=110}
 
@@ -238,6 +238,6 @@ H3 を Google Colab で動かせば、高額な PC がなくても動画を作�
 
 サンプル動画を作ってから正式動画を作る人など、世の中にはいろいろな動画作成をする方がいます。本章の内容を出発点にして、自分にとってベストな窓際動画の作り方を探してください。
 
-なお、著者は CapCut <span class="footnote">CapCut, <a href="https://www.capcut.com/">https://www.capcut.com/</a></span> を使って動画を作成していましたが、直近では H3 を Google Colab で動かすようにしています。今後も、安く・早く・精度よく作れるツールが次々と登場するでしょう。本章を読んでスタートラインに立ってもらったあとは、さまざまな情報を集めて進化させてください。
+なお、著者は CapCut <span class="footnote">CapCut, https://www.capcut.com/</span> を使って動画を作成していましたが、直近では H3 を Google Colab で動かすようにしています。今後も、安く・早く・精度よく作れるツールが次々と登場するでしょう。本章を読んでスタートラインに立ってもらったあとは、さまざまな情報を集めて進化させてください。
 
 ![CapCut](./images_madogiwa/qr-capcut.png){width=110}
